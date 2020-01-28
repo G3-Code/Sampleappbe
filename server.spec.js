@@ -25,7 +25,7 @@ describe("TS2: Test suite for testing /forecast/:place route", () => {
   it("TC1: Test the response status for get: forecast.", async () => {
     const res = await request(server)
       .get("/forecast/Chennai")
-      .expect(201);
+      .expect(200);
   });
 
   it("TC2: Test the data response back from forecast for a place", async () => {
@@ -51,5 +51,24 @@ describe("TS2: Test suite for testing /forecast/:place route", () => {
     const res = await request(server).get("/forecast/Chennai");
     const { currentForecast } = res.body;
     expect(currentForecast).toMatchObject(currentForecastData);
+  });
+  it("TC5: Negative Test the response status for get: forecast.", async () => {
+    const res = await request(server)
+      .get("/forecast/Bombay")
+      .expect(204);
+  });
+});
+
+describe("TS3: Test suite for testing /cities route", () => {
+  it("TC1: Test the response status for get: cities.", async () => {
+    const res = await request(server)
+      .get("/cities")
+      .expect(200);
+  });
+
+  it("TC2: Test the length of distinct cities obtained. Should be 4", async () => {
+    const res = await request(server).get("/cities");
+    const myCities = res.body;
+    expect(myCities.length).toBe(4);
   });
 });

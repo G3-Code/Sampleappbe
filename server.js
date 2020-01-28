@@ -7,10 +7,10 @@ const server = express();
 server.use(express.json());
 server.use(cors());
 
-// server.listen(port, err => {
-//   if (err) console.log(err);
-//   console.log(`Server running in port ${port}`);
-// });
+server.listen(port, err => {
+  if (err) console.log(err);
+  console.log(`Server running in port ${port}`);
+});
 
 server.get("/", (req, res) => {
   res.status(200).json({ message: "The Weather server is up and running!" });
@@ -161,14 +161,14 @@ server.get("/forecast/:place", (req, res) => {
   let myForecasts = forecast.filter(forecast => forecast.city == place);
   if (myForecasts.length > 0) {
     myForecasts.length = myForecasts.length > 5 ? 5 : myForecasts.length;
-    res.status(201).json({
+    res.status(200).json({
       forecasts: myForecasts,
       currentForecast: myForecasts[0],
       city: place
     });
   } else {
     res
-      .status(200)
+      .status(204)
       .json({ message: "No weather information to display.", city: place });
   }
 });
