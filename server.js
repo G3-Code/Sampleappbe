@@ -13,7 +13,7 @@ server.listen(port, err => {
 });
 
 server.get("/", (req, res) => {
-  res.status(200).json({ message: "The Employee server is up and running!" });
+  res.status(200).json({ message: "The Weather server is up and running!" });
 });
 
 let forecast = [
