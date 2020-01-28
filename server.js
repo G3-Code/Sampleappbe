@@ -1,16 +1,16 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const port = process.env.PORT || 3333;
+const port = process.env.PORT || 4000;
 
 const server = express();
 server.use(express.json());
 server.use(cors());
 
-server.listen(port, err => {
-  if (err) console.log(err);
-  console.log(`Server running in port ${port}`);
-});
+// server.listen(port, err => {
+//   if (err) console.log(err);
+//   console.log(`Server running in port ${port}`);
+// });
 
 server.get("/", (req, res) => {
   res.status(200).json({ message: "The Weather server is up and running!" });
@@ -177,3 +177,5 @@ server.get("/cities", (req, res) => {
   let myCities = [...new Set(forecast.map(item => item.city))];
   res.status(200).json(myCities);
 });
+
+module.exports = server;
