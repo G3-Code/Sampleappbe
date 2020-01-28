@@ -20,3 +20,36 @@ describe("TS1: Test suite for testing server set-up", () => {
     expect(message).toBe("The Weather server is up and running!");
   });
 });
+
+describe("TS2: Test suite for testing /forecast/:place route", () => {
+  it("TC1: Test the response status for get: forecast.", async () => {
+    const res = await request(server)
+      .get("/forecast/Chennai")
+      .expect(201);
+  });
+
+  it("TC2: Test the data response back from forecast for a place", async () => {
+    const res = await request(server).get("/forecast/Chennai");
+    const { city } = res.body;
+    expect(city).toBe("Chennai");
+  });
+
+  it("TC3: Test the data response back to have a length of 5", async () => {
+    const res = await request(server).get("/forecast/Chennai");
+    const { forecasts } = res.body;
+    expect(forecasts.length).toBe(5);
+  });
+  it("TC4: Test the data response back to be of object type currentForecast", async () => {
+    const currentForecastData = {
+      city: "Chennai",
+      day: "Tue",
+      high: "91",
+      low: "71",
+      message: "Sunny",
+      id: 0
+    };
+    const res = await request(server).get("/forecast/Chennai");
+    const { currentForecast } = res.body;
+    expect(currentForecast).toMatchObject(currentForecastData);
+  });
+});

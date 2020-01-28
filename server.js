@@ -161,7 +161,7 @@ server.get("/forecast/:place", (req, res) => {
   let myForecasts = forecast.filter(forecast => forecast.city == place);
   if (myForecasts.length > 0) {
     myForecasts.length = myForecasts.length > 5 ? 5 : myForecasts.length;
-    res.status(200).json({
+    res.status(201).json({
       forecasts: myForecasts,
       currentForecast: myForecasts[0],
       city: place
