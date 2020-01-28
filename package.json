@@ -2,7 +2,7 @@
   "name": "Sampleappbe",
   "version": "1.0.0",
   "description": "BE for the weather app - take home assignment",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "server": "nodemon server.js",
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/G3-Code/Sampleappbe#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1"
   },
   "devDependencies": {
