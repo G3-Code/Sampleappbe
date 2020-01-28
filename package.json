@@ -1,0 +1,29 @@
+{
+  "name": "Sampleappbe",
+  "version": "1.0.0",
+  "description": "BE for the weather app - take home assignment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G3-Code/Sampleappbe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/G3-Code/Sampleappbe/issues"
+  },
+  "homepage": "https://github.com/G3-Code/Sampleappbe#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
