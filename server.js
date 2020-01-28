@@ -62,7 +62,7 @@ let forecast = [
     day: "Tue",
     high: "51",
     low: "43",
-    message: "Rainny",
+    message: "Rainy",
     id: 5
   },
   {
@@ -102,7 +102,7 @@ let forecast = [
     day: "Tue",
     high: "71",
     low: "44",
-    message: "Rainny",
+    message: "Rainy",
     id: 10
   },
   {
