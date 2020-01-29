@@ -1,7 +1,7 @@
 let forecast = [
   {
     city: "Chennai",
-    day: "Tue",
+    day: "Wed",
     high: "91",
     low: "71",
     message: "Sunny",
@@ -9,7 +9,7 @@ let forecast = [
   },
   {
     city: "Chennai",
-    day: "Wed",
+    day: "Thu",
     high: "93",
     low: "68",
     message: "Cloudy",
@@ -17,7 +17,7 @@ let forecast = [
   },
   {
     city: "Chennai",
-    day: "Thu",
+    day: "Fri",
     high: "95",
     low: "70",
     message: "Sunny",
@@ -25,7 +25,7 @@ let forecast = [
   },
   {
     city: "Chennai",
-    day: "Fri",
+    day: "Sat",
     high: "94",
     low: "71",
     message: "Sunny",
@@ -33,7 +33,7 @@ let forecast = [
   },
   {
     city: "Chennai",
-    day: "Sat",
+    day: "Sun",
     high: "92",
     low: "71",
     message: "partlysunny",
@@ -41,7 +41,7 @@ let forecast = [
   },
   {
     city: "Dallas",
-    day: "Tue",
+    day: "Wed",
     high: "51",
     low: "43",
     message: "Rainy",
@@ -49,7 +49,7 @@ let forecast = [
   },
   {
     city: "Dallas",
-    day: "Wed",
+    day: "Thu",
     high: "47",
     low: "39",
     message: "Cloudy",
@@ -57,7 +57,7 @@ let forecast = [
   },
   {
     city: "Dallas",
-    day: "Thu",
+    day: "Fri",
     high: "48",
     low: "40",
     message: "Cloudy",
@@ -65,7 +65,7 @@ let forecast = [
   },
   {
     city: "Dallas",
-    day: "Fri",
+    day: "Sat",
     high: "56",
     low: "36",
     message: "Sunny",
@@ -73,7 +73,7 @@ let forecast = [
   },
   {
     city: "Dallas",
-    day: "Sat",
+    day: "Sun",
     high: "64",
     low: "42",
     message: "Sunny",
@@ -81,7 +81,7 @@ let forecast = [
   },
   {
     city: "Austin",
-    day: "Tue",
+    day: "Wed",
     high: "71",
     low: "44",
     message: "Rainy",
@@ -89,7 +89,7 @@ let forecast = [
   },
   {
     city: "Austin",
-    day: "Wed",
+    day: "Thu",
     high: "62",
     low: "43",
     message: "Sunny",
@@ -97,7 +97,7 @@ let forecast = [
   },
   {
     city: "Austin",
-    day: "Thu",
+    day: "Fri",
     high: "54",
     low: "44",
     message: "Cloudy",
@@ -105,7 +105,7 @@ let forecast = [
   },
   {
     city: "Austin",
-    day: "Fri",
+    day: "Sat",
     high: "61",
     low: "41",
     message: "Sunny",
@@ -113,7 +113,7 @@ let forecast = [
   },
   {
     city: "Austin",
-    day: "Sat",
+    day: "Sun",
     high: "70",
     low: "46",
     message: "Sunny",
@@ -121,7 +121,7 @@ let forecast = [
   },
   {
     city: "London",
-    day: "Tue",
+    day: "Wed",
     high: "45",
     low: "39",
     message: "Sunny",
@@ -129,7 +129,7 @@ let forecast = [
   },
   {
     city: "London",
-    day: "Wed",
+    day: "Thu",
     high: "50",
     low: "45",
     message: "partlysunny",
